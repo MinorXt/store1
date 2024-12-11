@@ -19,15 +19,15 @@ $id = $_GET['id_product']??null;
 
     <?php if($id == null):?>
         <form action="/store1/handler/Add_admission.php" method="post">
-            <input type="datetime-local" placeholder="Дата и время поставки" name="date_time">
-            <select name="select" id="">
+            <input type="text" placeholder="Дата и время поставки" name="date_time" id="date">
+            <select name="select" id="select">
                 <option value=""></option>
                 <?php foreach ($products as $product):?>
                     <option value="<?=$product['id']?>"><?=$product['name']?></option>
                 <?php endforeach;?>
             </select>
-            <input type="text" placeholder="Колличество" name="amount">
-            <input type="submit">
+            <input type="text" placeholder="Колличество" name="amount" id="amount">
+            <input type="submit" id="submit">
         </form>
     <?php else:?>
         <form action="/store1/handler/Add_admission.php" method="post">

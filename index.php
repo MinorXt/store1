@@ -18,7 +18,7 @@ $products = $pdo->query("SELECT * FROM product");
     <div class="nav">
         <a href="Add_product.php" id="add_product">Добавить товар</a>
         <br>
-        <a href="Add_admission.php"> Добавить информацию о поступлении товара</a>
+        <a href="Add_admission.php" id="add_admission"> Добавить информацию о поступлении товара</a>
     </div>
     <div class="content">
         <div class="cards">
