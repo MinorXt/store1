@@ -13,10 +13,10 @@
     <div class="container">
         <h1>Добавление</h1>
         <form action="/store1/handler/add_product.php" method="post">
-            <input type="text" placeholder="Название" name="name">
-            <input type="text" placeholder="Цена" name="price">
-            <input type="text" placeholder="Артикул" name="article">
-            <input type="submit">
+            <input type="text" placeholder="Название" name="name" id="name">
+            <input type="text" placeholder="Цена" name="price" id="price">
+            <input type="text" placeholder="Артикул" name="article" id="article">
+            <input type="submit" id="btn">
         </form>
     </div>
 </body>
